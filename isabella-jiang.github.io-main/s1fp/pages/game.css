@@ -75,6 +75,11 @@
     display: none;
   }
 
+  #img1 {
+    position: absolute;
+    top: 300px;
+  }
+  
   p.img {
     padding: 4px 0 12px 0;
     text-align: center;

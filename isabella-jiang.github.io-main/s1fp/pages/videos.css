@@ -1,3 +1,11 @@
+#wrapper {
+    position: relative;
+    width: 100vw;
+    height: 100vh;
+    background-color: beige;
+    background-size: cover;
+  }
+
 #closeicon {
     width: 20px;
     height: 20px;
@@ -32,7 +40,7 @@
   }
 
 #popup2 {
-    right: 400px;
+    right: 300px;
     top: 50px;
   }
 
@@ -41,11 +49,20 @@
   }
 
 #popup3 {
-    right: 300px;
-    top: 50%;
+    right: 200px;
+    top: 50px;
   }
   
 #popup3:target {
+    display: block;
+  }
+
+#popup4 {
+    right: 200px;
+    top: 50px;
+  }
+  
+#popup4:target {
     display: block;
   }
 
@@ -62,7 +79,7 @@
 }
 
 #file1 {
-    background-image: url("https://i.giphy.com/media/v1.Y2lkPTc5MGI3NjExOGIya2k2Ynk5NTZqZWZvbGNmdm4yajhodm5ud3hvOHltemZ2dGwyYiZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/W1hd3uXRIbddu/giphy.gif");
+    background-image: url("https://media3.giphy.com/media/v1.Y2lkPTc5MGI3NjExODdhYzk5aXVicmd4NnNhOGx0NnYxZ2N2M3VwZTBjb3d3NjdvYWoydSZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/NjpWsIimU2Wg8/giphy.webp");
 }
 
 #file2 {
@@ -71,6 +88,10 @@
 
 #file3 {
     background-image: url("https://media.tenor.com/arqlNu8gyJYAAAAM/cat-cat-jumping.gif");
+}
+
+#file4 {
+    background-image: url("https://media0.giphy.com/media/v1.Y2lkPTc5MGI3NjExOGRqd2w1eWVvMHpqN29qZHphaHZjdGdqZXVqcGpucjV0ODg3cDN0biZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/3oriO0OEd9QIDdllqo/giphy.webp");
 }
 
 .icon {
@@ -88,7 +109,7 @@
 
 #icon2 {
     top: 150px;
-    background-image: url("https://icons.iconarchive.com/icons/raindropmemory/in-spirited-we-love/128/Folder-icon.png");
+    background-image: url("https://icons.iconarchive.com/icons/raindropmemory/harmonia-pastelis/128/hp-video-2-icon.png");
 }
 
 #icon3 {
@@ -97,9 +118,8 @@
     background-image: url("https://icons.veryicon.com/png/System/Merry%20Go%20Round/Video.png");
 }
 
-#icon4 {
-    top: 450px;
-    left: 0px;
+/* #icon4 {
+    left: 100px;
     background-image: url("https://icons.iconarchive.com/icons/raindropmemory/harmonia-pastelis/128/hp-video-2-icon.png");
 }
 
@@ -113,7 +133,7 @@
     left: 150px;
     top: 200px;
     background-image: url("https://icons.iconarchive.com/icons/raindropmemory/in-spirited-we-love/128/Photo-icon.png");
-}
+} */
 
 .navbar {
     background: #b43757;
@@ -146,124 +166,6 @@
     background-image: url("https://icons.iconarchive.com/icons/raindropmemory/harmonia-pastelis/128/hp-home-icon.png");
     background-size: cover;
     filter: drop-shadow(2px 2px 5px #000);
-}
-
-.fa-gem {
-    margin-right: 8px;
-}
-.navbar__menu {
-    display: flex;
-    align-items: center;
-    list-style: none;
-    text-align: center;
-}
-
-.navbar__item {
-    height: 70px;
-}
-
-.navbar__links {
-    color: #fff;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    text-decoration: none;
-    padding: 0 16px;
-    height: 100%;
-}
-
-.navbar__btn {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    padding: 0 16px;
-    width: 100%;
-}
-
-.button {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    text-decoration: none;
-    padding: 10px 20px;
-    height: 100%;
-    width: 100%;
-    border: none;
-    outline: none;
-    border-radius: 4px;
-    background: #f77062;
-    color: #fff;
-}
-
-.button:hover {
-    background: #fc37ff;
-    transition: all 0.3s ease;
-}
-.navbar__links:hover {
-    color: #f77062;
-    transition: all 0.3s ease;
-}
-
-.navbar__menu {
-    display: grid;
-    grid-template-columns: auto;
-    margin: 0; 
-    width: 100%;
-    position: absolute;
-    top: -1000px;
-    opacity: 0;
-    transition: all 0.5s ease;
-    height: 50vh;
-    z-index: -1;
-}
-
-.navbar__menu.active {
-    background: #131313;
-    top: 100%;
-    opacity: 1;
-    transition: all 0.5s ease;
-    z-index: 99;
-    height: 50vh;
-    font-size: 25.6px;
-}
-
-.navbar__logo {
-    padding-left: 25%;
-}
-
-.navbar__toggle .bar {
-    width: 25px;
-    height: 3px;
-    margin: 5px auto;
-    transition: all 0.3s ease-in-out;
-    background: #fff;
-}
-
-.navbar__item {
-    width: 100%;
-}
-
-.navbar__links {
-    text-align: center;
-    padding: 32px;
-    width: 100%;
-    display: table;
-}
-
-#mobile-menu {
-    position: absolute;
-    top: 20%;
-    right: 5%;
-    transform: translate(5%, 20%);
-}
-
-.navbar__btn {
-    padding-bottom: 32px;
-}
-
-.button {
-    display: flex;
-    justify-content: center;
 }
 
 /* a.fill-div {
