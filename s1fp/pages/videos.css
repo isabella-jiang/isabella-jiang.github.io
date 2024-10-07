@@ -1,0 +1,184 @@
+#wrapper {
+    position: relative;
+    width: 100vw;
+    height: 100vh;
+    background-color: beige;
+    background-size: cover;
+  }
+
+#closeicon {
+    width: 20px;
+    height: 20px;
+    background-image: url("https://cdn4.iconfinder.com/data/icons/ionicons/512/icon-close-512.png");
+    right: 0px;
+}
+
+.close {
+    position: absolute;
+    width: 10px;
+    height: 10px;
+    background-size: cover;
+}
+
+.popup {
+    display: none;
+    width: 300px;
+    height: 300px;
+    position: absolute;
+    border:1px solid #CCC;
+    background:white;
+    filter: drop-shadow(1px 1px 1px #000);
+}
+
+#popup1 {
+    top: 200px;
+    right: 250px;
+  }
+
+#popup1:target {
+    display: block;
+  }
+
+#popup2 {
+    right: 300px;
+    top: 50px;
+  }
+
+#popup2:target {
+    display: block;
+  }
+
+#popup3 {
+    right: 200px;
+    top: 50px;
+  }
+  
+#popup3:target {
+    display: block;
+  }
+
+#popup4 {
+    right: 200px;
+    top: 50px;
+  }
+  
+#popup4:target {
+    display: block;
+  }
+
+.file {
+    width: 250px;
+    height: 250px;
+    position: relative;
+    top: 25px;
+    left: 25px;
+    background-size: cover;
+    position: absolute;
+    opacity: 1;
+    border: 2px black;
+}
+
+#file1 {
+    background-image: url("https://media3.giphy.com/media/v1.Y2lkPTc5MGI3NjExODdhYzk5aXVicmd4NnNhOGx0NnYxZ2N2M3VwZTBjb3d3NjdvYWoydSZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/NjpWsIimU2Wg8/giphy.webp");
+}
+
+#file2 {
+    background-image: url("https://media2.giphy.com/media/v1.Y2lkPTc5MGI3NjExbmE4cTF1emxxY2Zzb2hxaDljczh2MDg5ejJsczByYXVsZGVtNTlmcCZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/8vQSQ3cNXuDGo/giphy.webp");
+}
+
+#file3 {
+    background-image: url("https://media.tenor.com/arqlNu8gyJYAAAAM/cat-cat-jumping.gif");
+}
+
+#file4 {
+    background-image: url("https://media0.giphy.com/media/v1.Y2lkPTc5MGI3NjExOGRqd2w1eWVvMHpqN29qZHphaHZjdGdqZXVqcGpucjV0ODg3cDN0biZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/3oriO0OEd9QIDdllqo/giphy.webp");
+}
+
+.icon {
+    position: absolute;
+    margin: 100px;
+    width: 55px;
+    height: 55px;
+    background-size: cover;
+    filter: drop-shadow(2px 2px 5px #000);
+}
+
+#icon1 {
+    background-image: url("https://icons.iconarchive.com/icons/raindropmemory/in-spirited-we-love/128/Video-icon.png");
+}
+
+#icon2 {
+    top: 150px;
+    background-image: url("https://icons.iconarchive.com/icons/raindropmemory/harmonia-pastelis/128/hp-video-2-icon.png");
+}
+
+#icon3 {
+    top: 300px;
+    left: 5px;
+    background-image: url("https://icons.veryicon.com/png/System/Merry%20Go%20Round/Video.png");
+}
+
+/* #icon4 {
+    left: 100px;
+    background-image: url("https://icons.iconarchive.com/icons/raindropmemory/harmonia-pastelis/128/hp-video-2-icon.png");
+}
+
+#icon5 {
+    top: 400px;
+    left: 0px;
+    background-image: url("https://icons.iconarchive.com/icons/raindropmemory/harmonia-pastelis/128/hp-camera-photo-icon.png");
+}
+
+#icon8 {
+    left: 150px;
+    top: 200px;
+    background-image: url("https://icons.iconarchive.com/icons/raindropmemory/in-spirited-we-love/128/Photo-icon.png");
+} */
+
+.navbar {
+    background: #b43757;
+    height: 70px;
+    display: flex;
+    justify-content: left;
+    align-items: center;
+    font-size: 19px;
+    width: 100vw;
+    position: fixed;
+    bottom: 0;
+    z-index: 999;
+}
+
+#navbar__logo {
+    background-color: pink;
+    background-image: linear-gradient(to top, #9e4d61 0%, #ff99c9 100%);
+    background-size: 100%;
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+    text-decoration: none;
+    font-size: 32px;
+}
+
+#home {
+    position: absolute;
+    width: 55px;
+    height: 55px;
+    background-image: url("https://icons.iconarchive.com/icons/raindropmemory/harmonia-pastelis/128/hp-home-icon.png");
+    background-size: cover;
+    filter: drop-shadow(2px 2px 5px #000);
+}
+
+/* a.fill-div {
+    display: block;
+    height: 100%;
+    width: 100%;
+    text-decoration: none;
+} */
+
+/* #popup, #popup2 {
+    visibility: hidden;
+  }
+  
+  #popup:target, #popup2:target {
+    visibility: visible;
+  } */

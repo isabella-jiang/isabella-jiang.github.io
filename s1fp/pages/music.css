@@ -1,0 +1,72 @@
+#wrapper {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-size: cover;
+    margin-top: 60px;
+}
+
+.cd {
+    width: 400px;
+    height: 100px;
+}
+
+#cd1 {
+    background-color: pink;
+}
+
+#cd2 {
+    background-color: purple;
+}
+
+#cd3 {
+    background-color: green;
+}
+
+#cd4 {
+    background-color: blue;
+}
+
+#cd5 {
+    background-color: red;
+}
+
+.audio-player {
+    width: 300px;
+    position: relative;
+    top: 22.5px;
+    left: 48px;
+}
+
+.navbar {
+    background: #b43757;
+    height: 70px;
+    display: flex;
+    justify-content: left;
+    align-items: center;
+    font-size: 19px;
+    width: 100vw;
+    position: fixed;
+    bottom: 0;
+    z-index: 999;
+}
+
+#navbar__logo {
+    background-color: pink;
+    background-image: linear-gradient(to top, #9e4d61 0%, #ff99c9 100%);
+    background-size: 100%;
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+    text-decoration: none;
+    font-size: 32px;
+}
+
+#home {
+    position: absolute;
+    width: 55px;
+    height: 55px;
+    background-image: url("https://icons.iconarchive.com/icons/raindropmemory/harmonia-pastelis/128/hp-home-icon.png");
+    background-size: cover;
+    bottom: 10px;
+}
