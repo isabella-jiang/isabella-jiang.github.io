@@ -1,0 +1,85 @@
+@import url('https://fonts.googleapis.com/css2?family=Jua&display=swap');
+
+#wrapper {
+    position: relative;
+    width: 100vw;
+    height: 100vh;
+    background-color: cream;
+    /* z-index: -99; */
+    background-size: cover;
+    margin: 100px;
+  }
+
+  * {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: 'Jua', sans-serif;
+    text-align: center;
+  }
+
+  h1 {
+    position: absolute;
+    left: 50%;
+    font-size: 30px;
+    text-align: center;
+  }
+
+  h4 {
+    font-size: 64px;
+    font-family: 'Times New Roman', Times, serif;
+    line-height: 100px;
+    text-align: center;
+  }
+
+  .space {
+    font-size: 32px;
+  }
+  
+  div {
+    display: block;
+  }
+  
+  .db1, .db2, .db3, .db4, .dc1, .dc2, .dd1, .dd2, .de1, .de2 {
+    display: none;
+  }
+
+  a {
+    color: #000;
+    text-decoration: none;
+    font-weight: bold;
+  }
+  
+  a.alt {
+    color: #c03;
+  }
+
+  a.alt0 {
+    color: #c03;
+    text-decoration: underline;
+  }
+
+  .a2 {
+    color: red;
+  }
+  
+  .a4 {
+    color: red;
+  }
+
+  .clear {
+    clear: both;
+  }
+
+  .none {
+    display: none;
+  }
+
+  p.img {
+    padding: 4px 0 12px 0;
+    text-align: center;
+  }
+
+  img {
+		width: 1000px;
+	}

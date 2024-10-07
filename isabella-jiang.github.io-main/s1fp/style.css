@@ -1,0 +1,286 @@
+@import url('https://fonts.googleapis.com/css2?family=Jua&display=swap');
+
+#wrapper{
+    position: relative;
+    width: 100vw;
+    height: 100vh;
+    /* background-image: url("https://image.jimcdn.com/app/cms/image/transf/dimension=980x10000:format=jpg/path/s3d6f4be392cf0e0f/image/i2b156e1ff0e4b1ab/version/1605468956/image.jpg"); */
+    /* z-index: -99; */
+    background-size: cover;
+  }
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: 'Jua', sans-serif;
+}
+
+.icon {
+    position: absolute;
+    width: 55px;
+    height: 55px;
+    background-size: cover;
+    filter: drop-shadow(2px 2px 5px #000);
+}
+
+#icon1 {
+    top: 75px;
+    left: 100px;
+    width: 55px;
+    height: 55px;
+    background-image: url("https://icons.iconarchive.com/icons/raindropmemory/harmonia-pastelis/128/hp-music-icon.png");
+}
+
+#icon2 {
+    top: 175px;
+    left: 100px;
+    width: 55px;
+    height: 55px;
+    background-image: url("https://icons.iconarchive.com/icons/raindropmemory/harmonia-pastelis/128/hp-artbook-icon.png");
+}
+
+#icon3 {
+    top: 275px;
+    left: 100px;
+    width: 55px;
+    height: 55px;
+    background-image: url("https://icons.veryicon.com/png/System/Merry%20Go%20Round/Video.png");
+}
+
+#icon4 {
+    top: 370px;
+    left: 100px;
+    width: 55px;
+    height: 55px;
+    background-image: url("https://icons.iconarchive.com/icons/raindropmemory/harmonia-pastelis/128/hp-video-2-icon.png");
+}
+
+#icon5 {
+    top: 475px;
+    left: 100px;
+    width: 55px;
+    height: 55px;
+    background-image: url("https://icons.iconarchive.com/icons/raindropmemory/harmonia-pastelis/128/hp-camera-photo-icon.png");
+}
+
+#icon6 {
+    margin: 100px;
+    left: 150px;
+    width: 55px;
+    height: 55px;
+    background-image: url("https://icons.iconarchive.com/icons/raindropmemory/in-spirited-we-love/128/Artbook-icon.png");
+}
+
+#icon7 {
+    margin: 100px;
+    left: 150px;
+    top: 100px;
+    width: 55px;
+    height: 55px;
+    background-image: url("https://icons.iconarchive.com/icons/raindropmemory/in-spirited-we-love/128/Video-icon.png");
+}
+
+#icon8 {
+    margin: 100px;
+    left: 150px;
+    top: 200px;
+    width: 55px;
+    height: 55px;
+    background-image: url("https://icons.iconarchive.com/icons/raindropmemory/in-spirited-we-love/128/Photo-icon.png");
+}
+
+#icon9 {
+    margin: 100px;
+    left: 150px;
+    top: 300px;
+    width: 55px;
+    height: 55px;
+    background-image: url("https://icons.iconarchive.com/icons/raindropmemory/in-spirited-we-love/128/Folder-icon.png");
+}
+
+#icon10 {
+    margin: 100px;
+    left: 150px;
+    top: 400px;
+    width: 55px;
+    height: 55px;
+    background-image: url("https://icons.iconarchive.com/icons/raindropmemory/harmonia-pastelis/256/hp-cat-icon.png");
+}
+
+a.fill-div {
+    display: block;
+    height: 100%;
+    width: 100%;
+    text-decoration: none;
+}
+
+.cssgridwrapper {
+    display: grid;
+    grid-template-columns: 200px 200px 200px 200px 50px;
+}
+
+.cssgridwrapper div {
+    height: 200px;
+    border: transparent;
+}
+
+.cssgriddoublewide {
+    grid-column: 2 / span 2;
+}
+
+    .navbar {
+        background: #b43757;
+        height: 70px;
+        display: flex;
+        justify-content: left;
+        align-items: center;
+        font-size: 19px;
+        width: 100vw;
+        position: fixed;
+        bottom: 0;
+        z-index: 999;
+    }
+
+    #navbar__logo {
+        background-color: pink;
+        background-image: linear-gradient(to top, #9e4d61 0%, #ff99c9 100%);
+        background-size: 100%;
+        display: flex;
+        align-items: center;
+        cursor: pointer;
+        text-decoration: none;
+        font-size: 32px;
+    }
+
+    #home {
+        position: absolute;
+        width: 55px;
+        height: 55px;
+        background-image: url("https://icons.iconarchive.com/icons/raindropmemory/harmonia-pastelis/128/hp-home-icon.png");
+        background-size: cover;
+        bottom: 10px;
+    }
+
+    .fa-gem {
+        margin-right: 8px;
+    }
+    .navbar__menu {
+        display: flex;
+        align-items: center;
+        list-style: none;
+        text-align: center;
+    }
+
+    .navbar__item {
+        height: 70px;
+    }
+
+    .navbar__links {
+        color: #fff;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        text-decoration: none;
+        padding: 0 16px;
+        height: 100%;
+    }
+
+    .navbar__btn {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        padding: 0 16px;
+        width: 100%;
+    }
+
+    .button {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        text-decoration: none;
+        padding: 10px 20px;
+        height: 100%;
+        width: 100%;
+        border: none;
+        outline: none;
+        border-radius: 4px;
+        background: #f77062;
+        color: #fff;
+    }
+
+    .button:hover {
+        background: #fc37ff;
+        transition: all 0.3s ease;
+    }
+    .navbar__links:hover {
+        color: #f77062;
+        transition: all 0.3s ease;
+    }
+
+    @media screen and (max-width: 960px) {
+        .navbar__container {
+            display: flex;
+            justify-content: space-between;
+            height: 70px;
+            z-index: 1;
+            width: 100%;
+            max-width: 1300px;
+            padding: 0;
+        }
+    }
+
+    .navbar__menu {
+        display: grid;
+        grid-template-columns: auto;
+        margin: 0; 
+        width: 100%;
+        position: absolute;
+        top: -1000px;
+        opacity: 0;
+        transition: all 0.5s ease;
+        height: 50vh;
+        z-index: -1;
+    }
+
+    .navbar__menu.active {
+        background: #131313;
+        top: 100%;
+        opacity: 1;
+        transition: all 0.5s ease;
+        z-index: 99;
+        height: 50vh;
+        font-size: 25.6px;
+    }
+
+    .navbar__logo {
+        padding-left: 25%;
+    }
+
+    .navbar__toggle .bar {
+        width: 25px;
+        height: 3px;
+        margin: 5px auto;
+        transition: all 0.3s ease-in-out;
+        background: #fff;
+    }
+
+    .navbar__item {
+        width: 100%;
+    }
+
+    .navbar__links {
+        text-align: center;
+        padding: 32px;
+        width: 100%;
+        display: table;
+    }
+
+    .navbar__btn {
+        padding-bottom: 32px;
+    }
+
+    .button {
+        display: flex;
+        justify-content: center;
+    }

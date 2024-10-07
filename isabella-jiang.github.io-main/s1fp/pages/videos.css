@@ -1,0 +1,282 @@
+#closeicon {
+    width: 20px;
+    height: 20px;
+    background-image: url("https://cdn4.iconfinder.com/data/icons/ionicons/512/icon-close-512.png");
+    right: 0px;
+}
+
+.close {
+    position: absolute;
+    width: 10px;
+    height: 10px;
+    background-size: cover;
+}
+
+.popup {
+    display: none;
+    width: 300px;
+    height: 300px;
+    position: absolute;
+    border:1px solid #CCC;
+    background:white;
+    filter: drop-shadow(1px 1px 1px #000);
+}
+
+#popup1 {
+    top: 200px;
+    right: 250px;
+  }
+
+#popup1:target {
+    display: block;
+  }
+
+#popup2 {
+    right: 400px;
+    top: 50px;
+  }
+
+#popup2:target {
+    display: block;
+  }
+
+#popup3 {
+    right: 300px;
+    top: 50%;
+  }
+  
+#popup3:target {
+    display: block;
+  }
+
+.file {
+    width: 250px;
+    height: 250px;
+    position: relative;
+    top: 25px;
+    left: 25px;
+    background-size: cover;
+    position: absolute;
+    opacity: 1;
+    border: 2px black;
+}
+
+#file1 {
+    background-image: url("https://i.giphy.com/media/v1.Y2lkPTc5MGI3NjExOGIya2k2Ynk5NTZqZWZvbGNmdm4yajhodm5ud3hvOHltemZ2dGwyYiZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/W1hd3uXRIbddu/giphy.gif");
+}
+
+#file2 {
+    background-image: url("https://media2.giphy.com/media/v1.Y2lkPTc5MGI3NjExbmE4cTF1emxxY2Zzb2hxaDljczh2MDg5ejJsczByYXVsZGVtNTlmcCZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/8vQSQ3cNXuDGo/giphy.webp");
+}
+
+#file3 {
+    background-image: url("https://media.tenor.com/arqlNu8gyJYAAAAM/cat-cat-jumping.gif");
+}
+
+.icon {
+    position: absolute;
+    margin: 100px;
+    width: 55px;
+    height: 55px;
+    background-size: cover;
+    filter: drop-shadow(2px 2px 5px #000);
+}
+
+#icon1 {
+    background-image: url("https://icons.iconarchive.com/icons/raindropmemory/in-spirited-we-love/128/Video-icon.png");
+}
+
+#icon2 {
+    top: 150px;
+    background-image: url("https://icons.iconarchive.com/icons/raindropmemory/in-spirited-we-love/128/Folder-icon.png");
+}
+
+#icon3 {
+    top: 300px;
+    left: 5px;
+    background-image: url("https://icons.veryicon.com/png/System/Merry%20Go%20Round/Video.png");
+}
+
+#icon4 {
+    top: 450px;
+    left: 0px;
+    background-image: url("https://icons.iconarchive.com/icons/raindropmemory/harmonia-pastelis/128/hp-video-2-icon.png");
+}
+
+#icon5 {
+    top: 400px;
+    left: 0px;
+    background-image: url("https://icons.iconarchive.com/icons/raindropmemory/harmonia-pastelis/128/hp-camera-photo-icon.png");
+}
+
+#icon8 {
+    left: 150px;
+    top: 200px;
+    background-image: url("https://icons.iconarchive.com/icons/raindropmemory/in-spirited-we-love/128/Photo-icon.png");
+}
+
+.navbar {
+    background: #b43757;
+    height: 70px;
+    display: flex;
+    justify-content: left;
+    align-items: center;
+    font-size: 19px;
+    width: 100vw;
+    position: fixed;
+    bottom: 0;
+    z-index: 999;
+}
+
+#navbar__logo {
+    background-color: pink;
+    background-image: linear-gradient(to top, #9e4d61 0%, #ff99c9 100%);
+    background-size: 100%;
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+    text-decoration: none;
+    font-size: 32px;
+}
+
+#home {
+    position: absolute;
+    width: 55px;
+    height: 55px;
+    background-image: url("https://icons.iconarchive.com/icons/raindropmemory/harmonia-pastelis/128/hp-home-icon.png");
+    background-size: cover;
+    filter: drop-shadow(2px 2px 5px #000);
+}
+
+.fa-gem {
+    margin-right: 8px;
+}
+.navbar__menu {
+    display: flex;
+    align-items: center;
+    list-style: none;
+    text-align: center;
+}
+
+.navbar__item {
+    height: 70px;
+}
+
+.navbar__links {
+    color: #fff;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-decoration: none;
+    padding: 0 16px;
+    height: 100%;
+}
+
+.navbar__btn {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 0 16px;
+    width: 100%;
+}
+
+.button {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-decoration: none;
+    padding: 10px 20px;
+    height: 100%;
+    width: 100%;
+    border: none;
+    outline: none;
+    border-radius: 4px;
+    background: #f77062;
+    color: #fff;
+}
+
+.button:hover {
+    background: #fc37ff;
+    transition: all 0.3s ease;
+}
+.navbar__links:hover {
+    color: #f77062;
+    transition: all 0.3s ease;
+}
+
+.navbar__menu {
+    display: grid;
+    grid-template-columns: auto;
+    margin: 0; 
+    width: 100%;
+    position: absolute;
+    top: -1000px;
+    opacity: 0;
+    transition: all 0.5s ease;
+    height: 50vh;
+    z-index: -1;
+}
+
+.navbar__menu.active {
+    background: #131313;
+    top: 100%;
+    opacity: 1;
+    transition: all 0.5s ease;
+    z-index: 99;
+    height: 50vh;
+    font-size: 25.6px;
+}
+
+.navbar__logo {
+    padding-left: 25%;
+}
+
+.navbar__toggle .bar {
+    width: 25px;
+    height: 3px;
+    margin: 5px auto;
+    transition: all 0.3s ease-in-out;
+    background: #fff;
+}
+
+.navbar__item {
+    width: 100%;
+}
+
+.navbar__links {
+    text-align: center;
+    padding: 32px;
+    width: 100%;
+    display: table;
+}
+
+#mobile-menu {
+    position: absolute;
+    top: 20%;
+    right: 5%;
+    transform: translate(5%, 20%);
+}
+
+.navbar__btn {
+    padding-bottom: 32px;
+}
+
+.button {
+    display: flex;
+    justify-content: center;
+}
+
+/* a.fill-div {
+    display: block;
+    height: 100%;
+    width: 100%;
+    text-decoration: none;
+} */
+
+/* #popup, #popup2 {
+    visibility: hidden;
+  }
+  
+  #popup:target, #popup2:target {
+    visibility: visible;
+  } */
