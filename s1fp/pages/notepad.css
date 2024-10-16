@@ -1,7 +1,0 @@
-:invalid + [for="txtName"] {
-    opacity: 0;
-  }
-  
-  :valid + [for="txtName"] {
-    opacity: 1;
-  }

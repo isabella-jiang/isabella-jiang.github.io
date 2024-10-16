@@ -1,14 +1,25 @@
+body {
+    margin: 0%;
+}
+
 #wrapper {
+    background-color: beige;
+    position: relative;
+    width: 100vw;
+    height: 100vh;
     display: flex;
     flex-direction: column;
     align-items: center;
-    background-size: cover;
-    margin-top: 60px;
+}
+
+#wrapper2 {
+    padding: 100px;
 }
 
 .cd {
     width: 400px;
     height: 100px;
+    filter: drop-shadow(2px 2px 5px #000);
 }
 
 #cd1 {
@@ -69,4 +80,5 @@
     background-image: url("https://icons.iconarchive.com/icons/raindropmemory/harmonia-pastelis/128/hp-home-icon.png");
     background-size: cover;
     bottom: 10px;
+    filter: drop-shadow(1px 1px 1px #000);
 }
