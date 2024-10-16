@@ -4,7 +4,7 @@
     position: relative;
     width: 100vw;
     height: 100vh;
-    background-image: url("/s1fp/images/even-shorter-fall-house-wallpaper.png");
+    background-image: url("images/even-shorter-fall-house-wallpaper.png");
     /* background-image: url("/s1fp/images/shorter-fall-house-wallpaper.png"); */
     /* background-image: url("/s1fp/images/fall-house-wallpaper.png"); */
     /* background-image: url("/s1fp/images/flipped-winter-house-wallpaper.jpg"); */
@@ -162,3 +162,23 @@ a.fill-div {
 .navbar__logo {
         padding-left: 25%;
     }
+        
+#iconText {
+    text-align: right;
+    color: orange;
+    position: absolute;
+    bottom: 0px;
+    filter: drop-shadow(2px 2px 5px #000);
+}
+
+#webring {
+    text-align: right;
+    position: absolute;
+    bottom: 0px;
+    right: 0px;
+    width: 50px;
+}
+
+.webringlink {
+    right: 55px;
+}
