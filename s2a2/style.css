@@ -1,0 +1,151 @@
+@import url('https://fonts.googleapis.com/css2?family=Jua&display=swap');
+
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh; /* Ensures the content is centered vertically */
+    margin: 0;
+    flex-direction: column; /* Stacks content vertically */
+    text-align: center;
+    font-family: Jua;
+    text-align: center;
+    background-color: rgb(252, 240, 217);
+}
+
+h1 {
+    font-size: 5vw;
+    animation: flashText 2s infinite;
+    margin: 20px;
+}
+
+@keyframes flashText {
+    0%, 50% {
+        opacity: 1;
+    }
+    25%, 75% {
+        opacity: 0;
+    }
+}
+
+.envelope-container {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    margin-top: 40px;
+}
+
+.envelope {
+    position: relative;
+    width: 150px;
+    cursor: pointer;
+}
+
+.envelope img {
+    width: 100%;
+}
+
+.hovermsg {
+    visibility: hidden;
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+    border-radius: 5px;
+    padding: 5px;
+    position: absolute;
+    bottom: 110%;
+    left: 50%;
+    transform: translateX(-50%);
+    white-space: nowrap;
+    opacity: 0;
+    transition: opacity 0.3s;
+    z-index: 10;
+}
+
+.envelope:hover .hovermsg {
+    visibility: visible;
+    opacity: 1;
+}
+
+.popup {
+    display: none;
+    position: fixed;
+    top: 10%;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 80%;
+    max-width: 600px;
+    background-color: white;
+    border: 2px solid #ddd;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+    z-index: 100;
+    padding: 20px;
+}
+
+.popup:target {
+    display: block;
+}
+
+.email-content {
+    position: relative;
+    text-align: left;
+}
+
+.close-btn {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    background-color: red;
+    color: white;
+    font-weight: bold;
+    padding: 5px 10px;
+    cursor: pointer;
+}
+
+.cta-btn {
+    display: inline-block;
+    margin-top: 20px;
+    padding: 10px 20px;
+    background-color: #ff0000;
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+    border-radius: 5px;
+    cursor: pointer;
+    align-items: center;
+}
+
+.cta-btn:hover {
+    background-color: #cc0000;
+}
+
+@media (max-width: 1024px) {
+    h1 {
+        font-size: 7vw;
+    }
+}
+
+@media (max-width: 768px) {
+    .envelope-container {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .envelope {
+        width: 200px;
+    }
+}
+
+@media (max-width: 480px) {
+    h1 {
+        font-size: 9vw;
+    }
+
+    .envelope {
+        width: 100px;
+    }
+
+    .popup {
+        width: 90%;
+    }
+}
