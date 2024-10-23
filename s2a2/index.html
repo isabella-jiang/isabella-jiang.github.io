@@ -23,7 +23,7 @@
         <a href="#popup2">
             <div class="envelope" id="envelope2" title="why are u reading this ? it's up to u">
                 <img src="giftmailicon.png" alt="Second envelope, a life-changing lottery offer.">
-                <div class="hovermsg">u can open me. or not. ur choice. i'm not looking. why would i care? ball's in ur court. totally not missing out on the opportunity of a lifetime...</div>
+                <div class="hovermsg">u can read me. or not. ur choice. why would i care? ball's in ur court. totally not missing out on the best news ever...</div>
             </div>
         </a>
 
@@ -42,6 +42,15 @@
                 <div class="hovermsg">i guess u don't have to open me if u don't feel like it</div>
             </div>
         </a>
+
+        <!-- envelope 5 -->
+        <a href="#popup5">
+            <div class="envelope" id="envelope5" title="that's it. not sure what else to say">
+                <img src="composemailicon.png" alt="Fifth icon, for composing a new email.">
+                <div class="hovermsg">compose a new message</div>
+            </div>
+        </a>
+
     </div>
 
     <!-- popups -->
@@ -82,6 +91,28 @@
             <h2>plz just giv me moneys...</h2>
             <p>routing and ss nums wud be nice too :3</p>
             <a href="https://www.youtube.com/watch?v=oUI_tVU77cw" target="_blank" class="cta-btn">i have a gift for u in return</a>
+        </div>
+    </div>
+    
+    <!-- popup 5 -->
+    <div id="popup5" class="popup">
+        <div class="email-content">
+            <a href="#"><div class="close-btn" title="Close Popup">X</div></a>
+            <h2>Compose a New Message</h2>
+            <p>Note: <span style="color:gray">You must fill out all fields to send a message.</span></p>
+            <form action="https://youtu.be/SWkMYO9V_-k?si=ol_B4WgHRJeToBO1" target="_blank">
+
+                <label for="to">To:</label>
+                <input type="text" id="to" name="to" required placeholder="Recipient's email" class="form-field"><br><br>
+
+                <label for="subject">Subject:</label>
+                <input type="text" id="subject" name="subject" required placeholder="Enter subject" class="form-field"><br><br>
+
+                <label for="message">Message:</label>
+                <textarea id="message" name="message" rows="6" placeholder="Type your message here..." class="form-field"></textarea><br><br>
+
+                <button type="submit" class="cta-btn">Send</button>
+            </form>
         </div>
     </div>
 </body>
