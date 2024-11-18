@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>2</title>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap');
+    </style>
+    <link rel="stylesheet" href="vid.css">
+</head>
+<body>
+    <div id="video-container">
+        <!-- video -->
+        <video id="video" autoplay muted playsinline>
+          <source src="s3a1-2-smaller.mp4" type="video/mp4">
+        </video>
+        
+        <!-- Buttons for choices -->
+        <div class="button-container" id="button-container">
+            <button id="choice1-button" class="action-button">PLAY IT OFF</button>
+            <button id="choice2-button" class="action-button">GASLIGHT</button>
+        </div>
+    </div>
+
+    <button id="sound-button">Unmute</button>
+
+    <script>
+        const video = document.getElementById('video');
+        const soundButton = document.getElementById('sound-button');
+
+        soundButton.addEventListener('click', () => {
+            if (video.muted) {
+                video.muted = false;
+                soundButton.textContent = 'Mute';
+            } else {
+                video.muted = true;
+                soundButton.textContent = 'Unmute';
+            }
+        });
+        
+        const choice1Button = document.getElementById('choice1-button');
+        const choice2Button = document.getElementById('choice2-button');
+
+        // initially hide buttons
+        choice1Button.style.opacity = "0";
+        choice1Button.style.pointerEvents = "none";
+        choice2Button.style.opacity = "0";
+        choice2Button.style.pointerEvents = "none";
+
+        // show choice buttons
+        function showChoiceButtons(choice1, choice2) {
+            choice1Button.textContent = choice1.label;
+            choice2Button.textContent = choice2.label;
+            // make visible
+            choice1Button.style.opacity = "1";
+            choice1Button.style.pointerEvents = "auto";
+            choice2Button.style.opacity = "1";
+            choice2Button.style.pointerEvents = "auto";
+            // where to go
+            choice1Button.onclick = () => {
+                window.location.href = choice1.nextPage;
+            };
+            choice2Button.onclick = () => {
+                window.location.href = choice2.nextPage;
+            };
+        }
+
+        // show only when video ends
+        video.addEventListener('ended', () => {
+            showChoiceButtons(
+                { label: "PLAY IT OFF", nextPage: "p3a.html" },
+                { label: "GASLIGHT", nextPage: "p3b.html" }
+            );
+        });
+    </script>
+</body>
+</html>

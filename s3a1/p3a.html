@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>play it off</title>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap');
+    </style>
+    <link rel="stylesheet" href="vid.css">
+</head>
+<body>
+    <div id="video-container">
+        <!-- video -->
+        <video id="video" autoplay muted playsinline>
+          <source src="s3a1p3a.mp4" type="video/mp4">
+        </video>
+        <!-- Buttons for user choices -->
+        <div class="button-container" id="button-container">
+            <button id="attack-button" class="action-button" style="opacity: 0; pointer-events: none;">ATTACK</button>
+        </div>
+    </div>
+
+    <button id="sound-button">Unmute</button>
+
+    <script>
+        const video = document.getElementById('video');
+        const soundButton = document.getElementById('sound-button');
+
+        soundButton.addEventListener('click', () => {
+            if (video.muted) {
+                video.muted = false;
+                soundButton.textContent = 'Mute';
+            } else {
+                video.muted = true;
+                soundButton.textContent = 'Unmute';
+            }
+        });
+        
+        const attackButton = document.getElementById('attack-button');
+
+        // Initially hide button
+        attackButton.style.opacity = "0";
+        attackButton.style.pointerEvents = "none";
+
+        // flashing effect when video ends
+        video.addEventListener('ended', () => {
+            attackButton.style.opacity = "1";
+            attackButton.style.pointerEvents = "auto";
+            attackButton.classList.add('flashing'); // Add flashing effect
+        });
+
+        // where to
+        attackButton.onclick = () => {
+            window.location.href = 'p4.html';
+        };
+
+    </script>
+</body>
+</html>

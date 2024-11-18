@@ -1,0 +1,244 @@
+@import url('https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap');
+
+body {
+    margin: 0;
+    padding: 0;
+    overflow: hidden; /* prevent scrolling */
+  }
+
+  #video-container {
+    position: relative;
+    width: 100vw;
+    height: 100vh;
+  }
+
+  #video {
+    width: 100%;
+    height: 100%;
+    object-fit: cover; /* so vid fills screen */
+  }
+
+  .button-container {
+    position: absolute;
+    bottom: 20px;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    gap: 20px; /* space between buttons */
+  }
+
+  .action-button {
+    padding: 10px 20px;
+    font-size: 16px;
+    color: white;
+    font-family: "Press Start 2P";
+    text-shadow: 0px -1px 0px rgba(0,0,0,0.4);
+    background-color: #5f5558;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    border-left: solid 1px #443b42;
+    background: #5f5558;
+    box-shadow: 0px 5px 0px #443b42, 0px 6px 6px rgba(0, 0, 0, 0.3);
+    opacity: 0;
+    pointer-events: none;
+}
+
+  .action-button:hover {
+    background-color: #6c6265;
+  }
+
+  .action-button:active {
+    transform: translateY(3px);
+    box-shadow: 0px 2px 0px #443b42, 0px 4px 6px rgba(0, 0, 0, 0.3);
+  }
+
+  #next-button {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    padding: 10px 20px;
+    font-size: 16px;
+    color: white;
+    font-family: "Press Start 2P";
+    text-shadow: 0px -1px 0px rgba(0,0,0,0.4);
+    background-color: #5f5558;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    box-shadow: 0px 5px 0px #443b42, 0px 6px 6px rgba(0, 0, 0, 0.3);
+    opacity: 0;
+    transition: opacity 1s ease;
+    pointer-events: none;
+  }
+
+  #next-button:hover {
+    background-color: #6c6265;
+  }
+  
+  #next-button:active {
+    transform: translateY(3px);
+    box-shadow: 0px 2px 0px #443b42, 0px 4px 6px rgba(0, 0, 0, 0.3);
+  }
+
+  #next-button.visible {
+    opacity: 1;
+    pointer-events: auto;
+  }
+
+    /* visible for choice buttons just in case */
+  #choice1-button,
+  #choice2-button {
+    opacity: 0;
+    pointer-events: none;
+    transition: opacity 1s ease;
+  }
+
+  .button-visible {
+    opacity: 1;
+    pointer-events: auto;
+  }
+
+    /* so audio hidden visually but plays */
+  #audio {
+    display: none;
+  }
+
+  .chat-container {
+    /* margin-top: 100px; */
+    display: flex;
+    align-items: flex-start;
+    gap: 20px;
+    /* padding: 20px;
+    position: absolute;
+    top: 20px;
+    left: 20px; */
+  }
+
+  #bubble {
+    /* margin-top: 50px;
+    margin-left: 50px; */
+    background: black;
+    padding: 20px;
+    width: 1250px;
+    border: none;
+    /* border-radius: 20px; */
+  }
+  
+  .gpt-line{
+    color:#1abc9a;
+    font-family: "Press Start 2P";
+    text-shadow: 0px -1px 0px rgba(0,0,0,0.4);
+    font-size: 16px;
+    margin: 10px 0 0 10px;
+    white-space: nowrap;
+    overflow: hidden;
+    width: 0;
+    display: block;
+    animation: type 4s steps(60, end) forwards;
+  }
+  
+  .gpt-line:nth-child(2) {
+    animation-delay: 4s;
+  }
+  
+  .gpt-line:nth-child(3) {
+    animation-delay: 8s;
+  }
+  
+  .gpt-line:nth-child(4) {
+    animation-delay: 12s;
+  }
+  
+  .gpt-line:nth-child(5) {
+    animation-delay: 14s;
+  }
+  
+  .gpt-line:nth-child(6) {
+    animation-delay: 18s;
+  }
+  
+  span {
+    animation: blink 1s infinite;
+  }
+  
+  ::selection {
+    background: black;
+  }
+  
+  @keyframes type {
+    to {
+      width: 100%;
+    }
+  }
+  @keyframes blink {
+    to {
+      opacity: .0;
+    }
+  }
+
+  #sound-button {
+    position: fixed;
+    bottom: 20px;
+    left: 20px;
+    padding: 10px 20px;
+    font-size: 16px;
+    color: white;
+    font-family: "Press Start 2P";
+    text-shadow: 0px -1px 0px rgba(0, 0, 0, 0.4);
+    background-color: #5f5558;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    box-shadow: 0px 5px 0px #443b42, 0px 6px 6px rgba(0, 0, 0, 0.3);
+  }
+  
+  #sound-button:hover {
+    background-color: #6c6265;
+  }
+  
+  #sound-button:active {
+    transform: translateY(3px);
+    box-shadow: 0px 2px 0px #443b42, 0px 4px 6px rgba(0, 0, 0, 0.3);
+  }
+
+  #attack-button {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    padding: 10px 20px;
+    font-size: 16px;
+    font-family: "Press Start 2P", sans-serif;
+    color: white;
+    text-shadow: 0px -1px 0px rgba(0, 0, 0, 0.4);
+    background-color: #d90429; /* Red color */
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    opacity: 0;
+    pointer-events: none;
+    transition: opacity 0.5s ease;
+    box-shadow: 0px 5px 0px #6e0000, 0px 6px 6px rgba(0, 0, 0, 0.3);
+  }
+  #attack-button:hover {
+    background-color: #ff073a;
+  }
+
+  #attack-button:active {
+    transform: translateY(3px);
+    box-shadow: 0px 2px 0px #6e0000, 0px 4px 6px rgba(0, 0, 0, 0.3);
+  }
+
+.flashing {
+    animation: flash 1s infinite;
+  }
+
+  @keyframes flash {
+    0%, 100% {
+        opacity: 1;
+    }
+    50% {
+        opacity: 0;
+    }
+  }

@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>4</title>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap');
+    </style>
+    <link rel="stylesheet" href="vid.css">
+</head>
+<body>
+    <div id="video-container">
+        <!-- video -->
+        <video id="video" autoplay muted playsinline>
+          <source src="s3a1-4.mp4" type="video/mp4">
+        </video>
+    </div>
+
+    <button id="sound-button">Unmute</button>
+
+    <script>
+        const video = document.getElementById('video');
+        const soundButton = document.getElementById('sound-button');
+
+        soundButton.addEventListener('click', () => {
+            if (video.muted) {
+                video.muted = false;
+                soundButton.textContent = 'Mute';
+            } else {
+                video.muted = true;
+                soundButton.textContent = 'Unmute';
+            }
+        });
+
+    </script>
+</body>
+</html>
