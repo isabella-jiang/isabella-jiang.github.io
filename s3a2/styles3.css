@@ -1,0 +1,144 @@
+@import url('https://fonts.googleapis.com/css2?family=Jua&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Jua', 'Comic Sans';
+  }
+
+  html, body {
+    height: 100%;
+    width: 100%;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+  }
+
+  body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    background: url('borderlessbackground.PNG') no-repeat center center fixed;
+    background-size: cover;
+  }
+
+  /* Envelope Content */
+  .envelope-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 100px;
+  }
+
+  .envelope {
+    position: relative;
+    width: 100%; /* has to match shadow and envelope size */
+    height: auto;
+  }
+
+  .mail {
+    position: relative;
+    width: 100%; /* has to match shadow and envelope size */
+    height: auto;
+  }
+
+  .mailshadow {
+    position: absolute;
+    width: 100%; /* Match envelope width */
+    height: auto;
+    z-index: -1; /* Place beneath envelope */
+  }
+
+  .seal-container {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 80px;
+    height: auto;
+  }
+
+  .bowshadow {
+    position: absolute;
+    top: 5px;
+    left: 5px;
+    width: 100%;
+    height: auto;
+    z-index: -1;
+  }
+
+  .stamp-container {
+    position: absolute;
+    top: -200px;
+    right: -200px;
+    width: 60px;
+    height: auto;
+  }
+
+  .miffyshadow {
+    position: absolute;
+    width: 100%;
+    height: auto;
+    z-index: -1; /* Shadow below stamp */
+  }
+
+  .popup {
+    display: none;
+    position: fixed;
+    /* top: 10%; */
+    top: 50%;
+    left: 50%;
+    /* transform: translateX(-50%); */
+    transform: translate(-50%, -50%);
+    width: 80%;
+    max-width: 600px;
+    background: url('textbackground.PNG') no-repeat center center fixed;
+    background-size: cover;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+    z-index: 100;
+    padding: 20px;
+    border-radius: 10px;
+  }
+
+  .popup:target {
+    display: block;
+  }
+
+  .email-content {
+    position: relative;
+    /* display: flex; */
+    /* flex-direction: column; */
+    justify-content: center;
+    /* align-items: center; */
+    padding: 20px;
+    text-align: left;
+  }
+
+  .close-btn {
+    position: absolute;
+    /* top: 10px; */
+    right: 10px;
+    background-color: #fa6429;
+    color: white;
+    font-weight: bold;
+    border-radius: 5px;
+    padding: 5px 10px;
+    cursor: pointer;
+  }
+
+  .cta-btn {
+    display: inline-block;
+    margin-top: 20px;
+    padding: 10px 20px;
+    background-color: #fa6429;
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+    border-radius: 5px;
+    cursor: pointer;
+    align-items: center;
+  }
