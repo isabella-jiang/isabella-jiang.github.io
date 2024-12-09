@@ -1,0 +1,59 @@
+@import url('https://fonts.googleapis.com/css2?family=Jua&display=swap');
+
+body {
+  margin: 0;
+  padding: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background-color: #d55202;
+  overflow: hidden;
+  position: relative;
+}
+
+#titleContainer {
+  position: absolute;
+  top: 40%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+  pointer-events: none;
+  font-family: 'Jua', Arial, sans-serif;
+}
+
+#title {
+  font-family: 'Jua', Arial, sans-serif;
+  font-size: 100px;
+  color: #eece6e;
+  transform: translate(-50%, -50%);
+  text-shadow: 2px 2px 2px #e6a334;
+  animation: float 3s ease-in-out infinite;
+}
+
+#textInput {
+  position: relative;
+  width: 300px;
+  padding: 10px;
+  font-size: 20px;
+  font-family: 'Jua', Arial, sans-serif;
+  text-align: center;
+  margin-top: 20px;
+  border: 3px solid #e6a334;
+  border-radius: 10px;
+  background-color: #f8d7b3;
+  color: #8c3d1f;
+  pointer-events: auto;
+}
+
+@keyframes float {
+  0%, 100% {
+    transform: translate(-50%, -50%) scale(1);
+    color: #eece6e;
+  }
+  
+  50% {
+    transform: translate(-50%, -55%) scale(0.95);
+    color: #d55202;
+  }
+}
