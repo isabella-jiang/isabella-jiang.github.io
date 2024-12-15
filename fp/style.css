@@ -1,0 +1,188 @@
+@import url('https://fonts.googleapis.com/css2?family=Jua&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Patrick+Hand&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Fredoka&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Fredoka+One&display=swap');
+
+body {
+    margin: 0;
+    overflow: hidden;
+    font-family: 'Jua', sans-serif;
+}
+
+button {
+    font-family: 'Jua', sans-serif;
+} 
+
+#desktop {
+    width: 100vw;
+    height: calc(100vh - 50px);
+    background: url('images/windows-wallpaper.webp') no-repeat center center;
+    background-size: cover;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    gap: 20px;
+    padding: 40px;
+    align-content: flex-start;
+    box-sizing: border-box;
+    overflow: hidden;
+}
+
+.icon {
+    width: 80px;
+    text-align: center;
+    cursor: pointer;
+    /* margin: 5px; */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.icon img {
+    width: 48px;
+    height: 48px;
+    filter: drop-shadow(2px 2px 4px #000);
+}
+
+.icon-label {
+    color: black;
+    margin-top: 5px;
+    padding: 2px;
+    /* filter: drop-shadow(2px 2px 4px #000); */
+}
+
+.icon.selected {
+    background: rgba(135, 206, 250, 0.5);
+}
+
+#taskbar {
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    background: blue;
+    height: 50px;
+    display: flex;
+    align-items: center;
+    padding: 0 10px;
+    filter: drop-shadow(2px 2px 4px #000);
+}
+
+#taskbar button {
+    background: green;
+    color: white;
+    border: none;
+    padding: 10px;
+    margin-right: 5px;
+    cursor: pointer;
+    font-family: 'Jua';
+    filter: drop-shadow(2px 2px 4px #000);
+}
+
+#start-menu {
+    position: absolute;
+    bottom: 50px;
+    left: 10px;
+    background: blue;
+    color: white;
+    padding: 10px;
+    border-radius: 5px;
+    filter: drop-shadow(2px 2px 4px #000);
+}
+
+#start-menu.hidden {
+    display: none;
+}
+
+#start-menu ul {
+    list-style: none;
+    padding: 10px 10px 10px 0px;
+    margin: 0;
+}
+
+#start-menu li {
+    padding: 10px;
+    cursor: pointer;
+    transition: background-color 0.2s;
+    border-radius: 3px;
+}
+
+#start-menu li a {
+    color: white;
+    text-decoration: none;
+    display: block;
+}
+
+#start-menu li:hover {
+    background-color: #555;
+}
+
+#start-menu li:active {
+    background-color: #666;
+}
+
+.window {
+    position: absolute;
+    top: 50px;
+    left: 100px;
+    width: 500px;
+    height: 400px;
+    background: white;
+    border: 1px solid #ccc;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+    display: none;
+    flex-direction: column;
+    z-index: 10;
+}
+
+.window-header {
+    background: blue;
+    color: white;
+    padding: 5px;
+    cursor: move;
+    display: flex;
+    justify-content: space-between;
+}
+
+.window-content {
+    flex: 1;
+    padding: 0px 30px 10px 30px;
+}
+
+.window-content.scrollable {
+    overflow-y: scroll;
+    font-family: 'Patrick Hand', cursive;
+    background-color: beige;
+}
+
+.window-controls button {
+    background: none;
+    color: white;
+    border: none;
+    cursor: pointer;
+    padding: 0 5px;
+    font-size: 16px;
+}
+
+.maximized {
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    margin: 0;
+    border-radius: 0;
+    display: flex;
+    position: fixed;
+}
+
+.hidden {
+    display: none;
+}
+
+.window:target {
+    display: flex;
+}
+
+a:link, a:visited {
+    text-decoration: none
+}

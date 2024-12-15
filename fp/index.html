@@ -1,0 +1,400 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>portfolio</title>
+</head>
+<body>
+    <div id="desktop">
+        <!-- icons -->
+        <div class="icon" data-window="photos">
+            <img src="images/photo-icon.png" alt="Photo">
+            <div class="icon-label">s1a1.img</div>
+        </div>
+        <div class="icon" data-window="gif">
+            <img src="images/photo2-icon.png" alt="GIF">
+            <div class="icon-label">s1a2.gif</div>
+        </div>
+        <div class="icon" data-window="downgrade">
+            <img src="images/windows-icon.png" alt="Downgrade">
+            <div class="icon-label">Windows 1.0</div>
+        </div>
+        <div class="icon" data-window="greyscale">
+            <img src="images/grayscale-icon.png" alt="Greyscale">
+            <div class="icon-label">Greyscale</div>
+        </div>
+        <div class="icon" data-window="mail">
+            <img src="images/mail2-icon.png" alt="Mail">
+            <div class="icon-label">Mail</div>
+        </div>
+        <div class="icon" data-window="clock">
+            <img src="images/clock3-icon.png" alt="Clock">
+            <div class="icon-label">Clock</div>
+        </div>
+        <div class="icon" data-window="game">
+            <img src="images/game7-icon.png" alt="Game">
+            <div class="icon-label">Game</div>
+        </div>
+        <div class="icon" data-window="applet">
+            <img src="images/mail3-icon.png" alt="Applet">
+            <div class="icon-label">Applet</div>
+        </div>
+        <div class="icon" data-window="cooking">
+            <img src="images/tomato7-icon.png" alt="Cooking">
+            <div class="icon-label">Cookbook</div>
+        </div>
+        <div class="icon" data-window="notes">
+            <img src="images/stickies-icon.png" alt="Notes">
+            <div class="icon-label">Notes</div>
+        </div>
+        <!-- <div class="icon" data-window="search">
+            <img src="images/search-icon.png" alt="Search">
+            <div class="icon-label">Internet Explorer</div>
+        </div> -->
+    </div>
+
+    <!-- taskbar -->
+    <div id="taskbar">
+        <button id="home-button">🏠</button>
+        <button id="start-button">Start</button>
+        <div id="start-menu" class="hidden">
+            <ul>
+                <!-- <li data-window="photos">Photos</li>
+                <li data-window="gif">GIFs</li>
+                <li data-window="downgrade">Windows 1.0</li>
+                <li data-window="greyscale">Greyscale</li>
+                <li data-window="mail">Mail</li>
+                <li data-window="clock">Clock</li>
+                <li data-window="game">Game</li>
+                <li data-window="applet">Applet</li>
+                <li data-window="cooking">Cooking</li>
+                <li data-window="notes">Notes</li> -->
+                <li><a href="#photos-window">Photos</a></li>
+                <li><a href="#gif-window">GIFs</a></li>
+                <li><a href="#downgrade-window">Windows 1.0</a></li>
+                <li><a href="#greyscale-window">Greyscale</a></li>
+                <li><a href="#mail-window">Mail</a></li>
+                <li><a href="#clock-window">Clock</a></li>
+                <li><a href="#game-window">Game</a></li>
+                <li><a href="#applet-window">Applet</a></li>
+                <li><a href="#cooking-window">Cooking</a></li>
+                <li><a href="#notes-window">Notes</a></li>
+            </ul>
+        </div>
+    </div>
+
+    <!-- windows -->
+    <!-- s1a1 -->
+    <div id="photos-window" class="window hidden">
+        <div class="window-header">
+            <span>s1a1.img</span>
+            <div class="window-controls">
+                <!-- <button class="minimize">_</button> -->
+                <button class="maximize">⌞⌝ </button>
+                <button class="close">X</button>
+            </div>
+        </div>
+        <div class="window-content">
+            <iframe src="https://codepen.io/isabellajiang/embed/NWZEYoR?default-tab=html%2Cresult" style="width: 100%; height: 100%; border: none;" allowfullscreen="true"></iframe>
+        </div>
+    </div>
+
+    <!-- s1a2 -->
+    <div id="gif-window" class="window hidden">
+        <div class="window-header">
+            <span>s1a2.gif</span>
+            <div class="window-controls">
+                <!-- <button class="minimize">_</button> -->
+                <button class="maximize">⌞⌝ </button>
+                <button class="close">X</button>
+            </div>
+        </div>
+        <div class="window-content">
+            <iframe src="https://codepen.io/isabellajiang/embed/ExBBxZJ?default-tab=html%2Cresult" style="width: 100%; height: 100%; border: none;" allowfullscreen="true"></iframe>></iframe>
+        </div>
+    </div>
+
+    <!-- s1fp -->
+    <div id="downgrade-window" class="window hidden">
+        <div class="window-header">
+            <span>Windows 1.0</span>
+            <div class="window-controls">
+                <!-- <button class="minimize">_</button> -->
+                <button class="maximize">⌞⌝ </button>
+                <button class="close">X</button>
+            </div>
+        </div>
+        <div class="window-content">
+            <iframe src="https://isabella-jiang.github.io/s1fp/" style="width: 100%; height: 100%; border: none;"></iframe>
+        </div>
+    </div>
+
+    <!-- s2a1 -->
+    <div id="greyscale-window" class="window hidden">
+        <div class="window-header">
+            <span>Greyscale</span>
+            <div class="window-controls">
+                <!-- <button class="minimize">_</button> -->
+                <button class="maximize">⌞⌝ </button>
+                <button class="close">X</button>
+            </div>
+        </div>
+        <div class="window-content">
+            <iframe src="https://andrewstlz.github.io/s1fp/index.html" style="width: 100%; height: 100%; border: none;"></iframe>
+        </div>
+    </div>
+
+    <!-- s2a2 -->
+    <div id="mail-window" class="window hidden">
+        <div class="window-header">
+            <span>Mail</span>
+            <div class="window-controls">
+                <!-- <button class="minimize">_</button> -->
+                <button class="maximize">⌞⌝ </button>
+                <button class="close">X</button>
+            </div>
+        </div>
+        <div class="window-content">
+            <iframe src="https://isabella-jiang.github.io/s2a2/" style="width: 100%; height: 100%; border: none;"></iframe>
+        </div>
+    </div>
+
+    <!-- s2fp -->
+    <div id="clock-window" class="window hidden">
+        <div class="window-header">
+            <span>Clock</span>
+            <div class="window-controls">
+                <!-- <button class="minimize">_</button> -->
+                <button class="maximize">⌞⌝ </button>
+                <button class="close">X</button>
+            </div>
+        </div>
+        <div class="window-content">
+            <iframe src="https://editor.p5js.org/isabellajiang/full/LU9eizJV3" style="width: 100%; height: 100%; border: none;"></iframe>
+        </div>
+    </div>
+
+    <!-- s3a1 FIX BC TEXT CUT OFF - MAKE COVER SCREEN OR OPEN NEW TAB W GAME OR SMT -->
+    <div id="game-window" class="window hidden">
+        <div class="window-header">
+            <span>Game</span>
+            <div class="window-controls">
+                <!-- <button class="minimize">_</button> -->
+                <button class="maximize">⌞⌝ </button>
+                <button class="close">X</button>
+            </div>
+        </div>
+        <div class="window-content">
+            <iframe src="https://isabella-jiang.github.io/s3a1/p0.html" style="width: 100%; height: 100%; border: none;"></iframe>
+        </div>
+    </div>
+
+    <!-- s3a2 TEXT ALSO CUT OFF - MAKE COVER SCREEN -->
+    <div id="applet-window" class="window hidden">
+        <div class="window-header">
+            <span>Applet</span>
+            <div class="window-controls">
+                <!-- <button class="minimize">_</button> -->
+                <button class="maximize">⌞⌝ </button>
+                <button class="close">X</button>
+            </div>
+        </div>
+        <div class="window-content">
+            <iframe src="https://isabella-jiang.github.io/s3a2/index3.html" style="width: 100%; height: 100%; border: none;"></iframe>
+        </div>
+    </div>
+    
+    <!-- s3fp JAVASCRIPT STUFF NOT WORKING -->
+    <div id="cooking-window" class="window hidden">
+        <div class="window-header">
+            <span>Cooking</span>
+            <div class="window-controls">
+                <!-- <button class="minimize">_</button> -->
+                <button class="maximize">⌞⌝ </button>
+                <button class="close">X</button>
+            </div>
+        </div>
+        <div class="window-content">
+            <iframe src="https://isabella-jiang.github.io/s3a3/index.html" style="width: 100%; height: 100%; border: none;"></iframe>
+        </div>
+    </div>
+
+    <!-- reading responses -->
+    <div id="notes-window" class="window hidden">
+        <div class="window-header">
+            <span>Notes</span>
+            <div class="window-controls">
+                <!-- <button class="minimize">_</button> -->
+                <button class="maximize">⌞⌝</button>
+                <button class="close">X</button>
+            </div>
+        </div>
+        <div class="window-content scrollable">
+            <!--reading1-->
+            <h2>Sep 4</h2>
+            <p>
+                Carrión’s notion of the ‘big monster’ resonated with me - facing a massive, almost intangible force whenever we try to communicate or create through established systems. Whether it’s bureaucracy or commercialization, it feels like there’s always something big and somewhat oppressive shaping our interactions. This metaphor feels even more relevant today with how algorithms decide what we and others see online, as well as what we're encouraged or discouraged from sharing (art and otherwise).
+            </p>
+            <p>
+                Carrión also made me think differently about what it means for art to be successful - how it's not just about how pretty or technically proficient a piece is, but about the conversation it starts and the responses it gets. In a way, this seems like a much more communal way of thinking about art.
+            </p>
+            <p>
+                <b><i>questions I’m left wondering about:</i></b>
+                <br>
+                How do we ensure that digital platforms, which are supposed to democratize art, don’t end up creating new exclusivities?
+                <br>
+                How can artists effectively challenge/circumvent the digital big monster without compromising things like visibility/impact?
+                <br>
+                How can artists measure the success of digital art in new ways, maybe focusing more on engagement and less on traditional metrics like views or likes?
+            </p>
+
+            <!--reading2-->
+            <h2>Sep 9</h2>
+            <p>
+                Schwulst is touching on all the imaginative possibilities that the internet holds for creative expression. Her comparison of websites to various objects and spaces -- gardens, puddles, thrown rocks -- really highlights how fluid and varied our digital spaces can be, how the web is really what we make it. What resonated with me most was the idea of a website as a garden, which grows and evolves over time, and how to approach creating online spaces -- not just as static repositories of information, but as living, breathing entities that grow with their creators and their audiences.
+            </p>
+            <p>
+                I liked Édouard U.’s ideas about how to keep your thought processes interconnected -- reading multiple books at once or blending different media experiences. They remind me of how the web, and our interaction with it, doesn’t have to be as siloed as we usually experience it. His essay also made me think more about how interconnected our ideas really are, and how the web amplifies this interconnectedness - yet often we don't harness it as effectively as we could. This definitely challenges the conventional usage of digital spaces and suggests a more fluid, dynamic way of interacting with information and ideas.
+            <p>
+                <b><i>questions I’m left wondering about:</i></b>
+                <br>
+                How can we apply Schwulst’s concept of a website as a living garden to commercial or informational sites that often prioritize static content over dynamic growth? or is her essay/approach not really relevant to these sorts of sites?
+                <br>
+                Considering the metaphor of a website as a puddle, which is ephemeral by nature, how can we design websites that embrace that while still having a lasting impact?
+                <br>
+                How can artists effectively challenge/circumvent the digital big monster without compromising things like visibility/impact?
+            </p>
+
+            <!--reading3-->
+            <h2>Sep 16</h2>
+            <p>
+                Lialina's work with the Geocities archive was a cool lens with which look at the transient nature of creating things on the web. It’s fascinating and definitely a bit sad to think about how entire communities can just vanish from the web -- and how today's popular digital spaces, the ones that are household names, might be gone in the future, replaced by newer, shinier trends. But it's also intriguing how some old web pages manage to hang around, and that we can still stumble upon these sorts of digital ruins. 
+            </p>
+            <p>
+                <b><i>questions I’m left wondering about:</i></b>
+                <br>
+                how could the amateur aesthetics and communal vibe of platforms like Geocities inspire current web design?
+                <br>
+                what are the ethical considerations in deciding what gets saved and what fades away on the internet?
+                <br>
+                how does the resilience of these old sites and pages challenge our current notions of web design, which seem to prioritize sleekness and speed?
+            </p>
+
+            <!--reading4-->
+            <h2>Sep 23</h2>
+            <p>
+                I like the notion of seeing the Earth as a single, visible entity, which feels especially resonant now as we navigate the digital world’s impact on the way we see the world. It really does anticipate the internet’s ability to connect (though these days, also divide) ideas and people.
+            </p>
+            <p>
+                Reinfurt’s vision of business as service, or of these two things melding together, makes me think about the discourse on corporate responsibility in the tech industry. Are companies like Google and Amazon aligning their massive influence with a genuine service ethos, or is there a disconnect between their public personas and their operational realities?
+            </p>
+            <p>
+                thinking about Gestalt psychology -- how can designers balance things like visual complexity with simplicity? how can we apply Gestalt principles to help users better filter and prioritize what they see?
+            </p>
+
+            <!--reading5-->
+            <h2>Sep 30</h2>
+            <p>
+                Cramer’s afterword made me think about how communities form around these hybrid forms. The artists’ books and zines scene he mentions -- print that’s networked but not owned by Facebook or Google -- is a really cool resistance to the way our online spaces are increasingly corporate. There’s definitely something political/really 'F-U' about choosing print as a way to stay outside the system in a world dominated by digital networks, resisting corporate control or surveillance -- yet still using those digital tools for distribution. 
+            </p>           
+            <p>
+                <b><i>questions I’m left wondering about:</i></b>
+                <br>
+                I’m curious about how far the digital-print hybrid can go before print loses its “collectible” nature. If a book/zine keeps updating/changing over time, can it still be considered a collectible object? Does this change how we value print as something timeless?
+            </p>
+            
+            <!--reading6-->
+            <h2>Oct 14</h2>
+            <p>
+                As someone who was really into creative writing as a high schooler, I really liked the idea of alt-text as a poetry of sorts, and seeing it as a space where artists and viewers can meet halfway, with each bringing something personal to the description. I’m so used to thinking of objectivity as this gold standard, so there's something really liberating about the suggestion that alt-text doesn’t need to be ‘objective’ -- which is really just one 'voice' among many -- and that if aiming for neutrality actually reinforces dominant perspectives, how much we’re missing by not considering more personal, nuanced descriptions. So writing alt-text in a way that’s subjective could actually connect users to the image more intimately. It seems like a great way to add richness and depth to how we connect with art.
+            </p>           
+            <p>
+                <b><i>questions I’m left wondering about:</i></b>
+                <br>
+                How do we find the balance in writing alt-text between being clear and being creative? What happens when too much creativity makes it harder to understand (and thus less accessible…)? or does it just make the experience more engaging?
+                <br>
+                What are yall’s thoughts on if we offered two/more types of alt-text for an image, e.g. one poetic and one literal/straightforward, or one detailed and one simple? Could this kind of choice maybe improve accessibility by letting users decide what they need?
+            </p>
+
+            <!--reading7-->
+            <h2>Oct 21</h2>
+            <p>
+                This was such a cool reading. It really hit me with just how deeply language/culture is embedded into the ‘DNA’ of technology, and made me question the role of power structures in the development of technology. I used to think of programming (and technology generally) as something universal or neutral, taking for granted that the programming languages we use are all built on English conventions, but Nasser makes it clear that programming inherits so much from the cultures and countries that first developed it. His experiment with creating قلب really revealed those invisible barriers non-English speakers face when entering the programming world. The part that stuck with me the most is how English is so deeply rooted in programming that even an Arabic programming language can’t fully escape its influence without being cut off from the broader digital ecosystem (e.g., github literally collapsing Arabic into hyphens for being ‘non-ASCII’, into “github.com/nasser/---,” felt especially jarring). 
+            </p>
+            <p>
+                It got me thinking a lot about the tension between the ideal of creating a programming experience for all cultures and the reality of programming’s historical roots in English-speaking contexts. Even with all the innovation happening, we haven’t found a way to bypass these cultural and linguistic defaults, and maybe we haven’t even tried hard enough. 
+            </p>
+            <p>
+                How can we design tools that are truly inclusive, but still functional and connected, given they come wrapped in the assumptions/biases of their origins...? Is a non-English programming environment even feasible on a global scale at this point, or are we too far down the path of being reliant on English programming languages? Maybe, should we instead focus on how to build better bridges between languages in the programming world (and given the limitations Nasser pointed out about machine translation, etc., what could that realistically look like)? Could new tech come about that can bypass these biases, or will cultural dominance always shape software design?
+            </p>
+
+            <!--reading8-->
+            <h2>Oct 28</h2>
+            <p>
+                Learning how Disney icons are loaded with this huge cultural power while being so casually ubiquitous/absorbed in our minds was a little jarring – it definitely strips away the childhood innocence we associate with these icons.  It’s interesting to think about how icons like Mickey are being transformed to become critiques of capitalism and cultural power (despite Disney itself being this ‘symbol of globalization and American hegemony’ at this point). It makes me wonder – what else in our childhoods might carry hidden layers of control or dominance that we don’t ever really think about? But also, in using symbols as hyperlinked signs, it almost feels like we’re becoming part of the same system of spectacle that critical designers are pushing against? 
+            </p>
+
+            <!--reading9-->
+            <h2>Nov 11</h2>
+            <p>
+                The idea of “a poetics of absence” made me think more about the constant push we have to archive or “capture” everything, but Frenkel highlights how even when we think we’re preserving something, so much is actually slipping away. It’s like the process of archiving creates a shadow of what’s missing, making us hyper-aware of what isn’t there. I really liked the idea of “X” she uses to represent both presence and cancellation, like a kind of haunting reminder that archiving doesn’t truly keep the past alive but rather just creates an illusion of permanence that might even separate us from the original experience or memory.
+            </p>
+            <p>
+                I was also really struck by the idea that digital memory, rather than being some infinite repository, might be inherently flawed or lacking, like Frenkel’s screen as a “phantasmagoric” device that distracts just as much as it reveals. 
+            </p>
+            <p>
+                questions I’m left with: if the act of archiving inevitably filters and alters memory, is there a way to make this filtering more transparent or self-aware? Could that be designed into digital spaces?
+            </p>
+
+            <!--reading10-->
+            <h2>Nov 18</h2>
+            <p>
+                One thing that really struck me was realizing this talk is from 2017. It’s jarring how so much of what Soulellis describes, like the blending of human and non-human voices or the rise of algorithmic publishing, is practically here -- hyper-curated feeds, AI-generated content indistinguishable from reality. Clearly, the ‘smooth flow’ of feeds was already a growing concern, but today it’s near-inescapable if you’re online at all. And also how much these ideas feel like they’ve accelerated, where back then, predictive videos and algorithmic agents were probably just emerging, but now they've advanced to a pretty scary level -- deepfakes, even fake influencers. It’s also interesting to think about how the ‘new boredom’/passivity Soulellis describes has evolved too, where algorithms feed us what they know we’ll like, quietly reinforcing our biases by smoothing things into curated feeds.
+            </p>
+
+            <!--reading11-->
+            <h2>Nov 25</h2>
+            <p>
+                This was really cool, and I loved how accessible the concepts felt as someone who is kind of a noob to all of this. What struck me most was the tension between ‘The Way’, technological systems that enforce control and isolation, and ‘The Beyond,’ which seems to stand in for collective, human-centered possibilities. I liked the reframing of tech as both a tool for control and a site for potential liberation. The way Gem grapples with the computer’s history, particularly its embedded master-slave dynamics, felt like a powerful critique of how our tools carry hidden legacies. And the moment when she connected the technology’s history with her own lived experiences, like being surveilled at a hardware store, was a jarring reminder of how deeply these systems impact marginalized communities. The timeline scenes were striking in how they revealed not just the achievements of technology but the ways it’s also been quietly complicit in systems of power, things like surveillance and gentrification, how even as technology might claim to optimize or “help” us, it often reflects deeper structural inequities. 
+            </p>
+            <p>
+                How can we resist feeling powerless in the face of pervasive technologies like The Way? How can we design future technologies that aren’t exploitative?
+            </p>
+
+            <!--reading12-->
+            <h2>Dec 2</h2>
+            <p>
+                This made me reflect on how the Internet is such a double-edged sword for artists and writers. On one hand, it’s great that anyone can share their work with a global audience without needing permission from traditional gatekeepers like museums or publishers, but at the same time, the constant visibility can make it feel like you’re always performing. The idea that the Internet erases the boundary between creating and sharing really stuck with me. 
+            </p>
+            <p>
+                I was also struck by the comparison between art and politics in shaping the future, where politics is sort of meant to disappear into its results, while art is supposed to stick around and keep influencing. But the Internet seems to blur that distinction, where protest movements can go viral, but then they’re archived, aestheticized, and almost turned into another piece of content. 
+            </p>
+            <p>
+                <b><i>questions I’m left wondering about:</i></b>
+                <br>
+                how does the constant visibility and surveillance of the Internet affect our ability to experiment creatively or fail safely? Hiw much has the Internet’s tendency to archive everything changed the way we understand movements like protests or revolutions?
+                <br>
+            </p>
+        </div>
+    </div>
+
+    <!-- search -->
+    <div id="search-window" class="window hidden">
+        <div class="window-header">
+            <span>Internet Explorer</span>
+            <div class="window-controls">
+                <!-- <button class="minimize">_</button> -->
+                <button class="maximize">⌞⌝</button>
+                <button class="close">X</button>
+            </div>
+        </div>
+        <div class="window-content">
+            <iframe src="https://duckduckgo.com/" style="width: 100%; height: 100%; border: none; visibility: visible;"></iframe>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
