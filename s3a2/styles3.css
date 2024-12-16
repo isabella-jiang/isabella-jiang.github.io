@@ -94,7 +94,7 @@
     left: 50%;
     /* transform: translateX(-50%); */
     transform: translate(-50%, -50%);
-    width: 80%;
+    width: 95%;
     max-width: 1200px;
     background: url('textbackground.PNG') no-repeat center center fixed;
     background-size: cover;
